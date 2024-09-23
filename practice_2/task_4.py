@@ -4,3 +4,13 @@ Develop a program that asks the user for an integer 4-digit number and calculate
 3 + 1 + 4 + 1 = 9
 
 """
+def four_sum():
+    print('Введите четырехзначное число')
+    num = int(input())
+    a = num % 10
+    b = num // 10 % 10
+    c = num // 100 % 10
+    d = num // 1000
+    return (f'{d} + {c} + {b} + {a} = {a + b + c + d}')
+
+print(four_sum())
